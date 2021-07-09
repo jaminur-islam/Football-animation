@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neimar
+
+    </title>
+
+
+    <style>
+
+        .stage {
+            
+            background:url(img/fill1.jpg) no-repeat;
+            background-position: top ,center;
+            background-size: cover;
+            width: 1400px;
+            height: 700px;
+            border: 1px solid green;
+            
+        }
+
+
+        .ball img {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 240px;
+            bottom: -150px;
+        }
+
+        .golbar img {
+            width: 400px;
+            height: 550px;
+            position: relative;
+            bottom: 270px;
+            left: 800px;
+        }
+
+        .messi {
+            position: relative;
+            bottom: -150px;
+            transform-origin: top;
+        }
+
+        .stage:hover .messi {
+            transform: rotate(-10deg);
+            transition: transform 0.1s;
+           
+        }
+
+        .stage:hover .ball  {
+            transform: translate(700px);
+            transition: transform 1s ease-out ;
+            transition-delay: .1s;
+            
+        }
+
+        h1 {
+            position: relative;
+            top: -900px;
+            left: 900px;
+            text-transform: uppercase;
+            background: rgb(36, 45, 54);
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 8px 2px;
+            transform: translate(100px);
+            display: none;
+
+        }
+       
+        .stage:hover h1{
+            transform: translate(0);
+            transition:  display 5s ease-out ;
+            display: inline-block;
+           
+            
+        }
+
+    
+        .golk >img {
+            position: relative;
+            top: -340px;
+            left: 650px;
+            width: 380px;
+            height: 380px;
+
+
+        }
+    
+    
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="stage">
+         <div class="messi">
+             <img src="img/3.png" alt="">
+
+         </div>
+
+
+         <div class="ball">
+             <img src="img/chutobal.png" alt="">
+
+
+         </div>
+
+
+         <div class="golbar">
+             <img src="img/goal-bar.png" alt="">
+         </div>
+         <div class="hd">      
+         <h1  class="hd">Goal</h1>
+        </div>
+
+
+
+    </div>
+    
+    <div class="golk">
+        <img id="pio" src="img/keeper2.png" alt="">
+    </div>
+    
+</body>
+</html>
